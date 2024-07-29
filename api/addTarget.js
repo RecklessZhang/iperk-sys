@@ -7,7 +7,7 @@ const db = require('../db/config')
     db.query(sql, [name, price, count], (error, result) => {
         if (error) {
             console.error(error); // 输出错误信息到控制台
-            response.status(500).send('Internal Server Error');
+            response.status(500).send(error);
         } else {
             response.status(200).send(result);
         }
