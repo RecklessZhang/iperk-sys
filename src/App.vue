@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Home></Home>
+    <Navbar v-if="!$route.meta.hideHeader" :_this="this"/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Home from './views/Home.vue'
-
+import Navbar from '@/components/common/Navbar.vue'
 export default {
   name: 'App',
   components: {
-    Home
+    Navbar
   }
 }
 </script>
@@ -20,8 +20,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

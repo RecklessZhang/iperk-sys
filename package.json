@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 80 --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -12,7 +12,10 @@
     "axios": "^1.7.2",
     "boxicons": "^2.0.5",
     "core-js": "^3.6.5",
+    "echarts": "^4.8.0",
+    "sortablejs": "^1.15.2",
     "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
     "vuesax": "^4.0.1-alpha.25",
     "vuex": "^3.6.2"
   },
