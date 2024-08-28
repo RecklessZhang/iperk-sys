@@ -68,16 +68,13 @@ export default {
         series: [
           {
             name: '出差',
-            type: 'scatter',
+            type: 'heatmap',
             coordinateSystem: 'calendar',
             data: data,
-            symbolSize: function (val) {
-              return val[1] * 10
-            },
             itemStyle: {
               normal: {
                 // color: '#DB4437'
-                color: '#409eff'
+                color: '#44A340'
               }
             }
           }

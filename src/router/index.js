@@ -10,6 +10,7 @@ import Trip from "../views/Trip.vue";
 import Wish from '../views/Wish.vue'
 import Link from '../views/Link.vue'
 import Author from '../views/Author.vue'
+import About from '../views/About.vue'
 import Confirm from '../views/Confirm.vue'
 
 Vue.use(VueRouter)
@@ -54,11 +55,27 @@ const routes = [
     component: Author
   },
   {
+    path: '/about',
+    name: 'About',
+    component: About,
+    meta: {
+      hideHeader: true
+    }
+  },
+  {
     path: '/resume',
     name: 'Resume',
     meta: {
       isExternalLink: true,
       targetUrl: 'https://resume.qnmdmyy.top'
+    }
+  },
+  {
+    path: '/github',
+    name: 'Github',
+    meta: {
+      isExternalLink: true,
+      targetUrl: 'https://github.com/RecklessZhang'
     }
   },
   {

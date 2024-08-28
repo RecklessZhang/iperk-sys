@@ -6,19 +6,6 @@
                     <i class='bx bx-menu'></i>
                 </vs-button>
             </template>
-            <template #right>
-                <vs-button icon color="#DB4437" @click="() => { _this.$router.push('/github') }">
-                    <i class='bx bxl-github'></i>
-                </vs-button>
-                <vs-button icon color="#000000" @click="() => { _this.$router.push('/gitee') }"
-                    style="margin-right: 30px;">
-                    <i class='bx bxl-github'></i>
-                </vs-button>
-                <vs-avatar>
-                    <img src="https://cdn.jsdelivr.net/gh/RecklessZhang/vueblogger-plus-drawbed/vueblogger-plus/config/boy.png"
-                        alt="">
-                </vs-avatar>
-            </template>
         </vs-navbar>
 
         <vs-sidebar absolute :open.sync="activeSidebar">
@@ -33,7 +20,7 @@
             </vs-sidebar-item>
             <vs-sidebar-item id="earn" to="/earn">
                 <template #icon>
-                  <i class='bx bx-dollar' ></i>
+                  <i class='bx bxs-happy-heart-eyes' ></i>
                 </template>
                 进项
             </vs-sidebar-item>
@@ -55,7 +42,7 @@
               </template>
               友链
             </vs-sidebar-item>
-            <vs-sidebar-item id="author" to="/author">
+            <vs-sidebar-item id="author" to="/about">
               <template #icon>
                 <i class='bx bxs-ghost'></i>
               </template>
