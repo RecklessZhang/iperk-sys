@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div style="width: 100vw; height: 300px;" ref="tripContainer"></div>
+    <div style="width: 100%;">
+        <div style="height: 300px;" ref="tripContainer"></div>
     </div>
   </template>
 

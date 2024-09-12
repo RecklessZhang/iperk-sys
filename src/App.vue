@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="hide-scroll-bar">
     <Navbar v-if="!$route.meta.hideHeader" :_this="this"/>
     <router-view />
   </div>
@@ -22,5 +22,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /*text-align: center;*/
   color: #2c3e50;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
 }
 </style>

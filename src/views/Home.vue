@@ -1,33 +1,41 @@
 <template>
-    <div class="pt-10">
-      <div class="grid-4_xs-1_sm-2_md-2">
-        <div
-            :key="index"
-            v-for="(labelCard, index) in labelCardList"
-            class="col w-full"
-        >
-          <ExchangeLink
-              :title="labelCard.title"
-              :icon="labelCard.icon"
-              :detail="labelCard.detail"
-              :url="labelCard.url"
-              class="text-align-center"
-          />
+    <div style="width: 100%;">
+      <div class="pt-10">
+        <div class="grid-4_xs-1_sm-2_md-2">
+          <div
+              :key="index"
+              v-for="(labelCard, index) in labelCardList"
+              class="col w-full"
+          >
+            <ExchangeLink
+                :title="labelCard.title"
+                :icon="labelCard.icon"
+                :detail="labelCard.detail"
+                :url="labelCard.url"
+                class="text-align-center"
+            />
+          </div>
+        </div>
+
+        <div class="w-full" style="min-height: 30vh;" ref="tripBar1"></div>
+
+        <div class="grid-3_xs-1_sm-2_md-2 mt-10">
+          <div class="col" ref="earnExpensePie" style="min-height: 30vh;"></div>
+          <div class="col" ref="tripBar" style="min-height: 30vh">
+          </div>
+          <div class="col" ref="tripBar2" style="min-height: 30vh;"></div>
+        </div>
+
+        <div class="grid-2_xs-1_sm-2_md-2 mt-10">
+          <div class="col" style="min-height: 30vh; background-color: pink;"></div>
+          <div class="col" style="min-height: 30vh; background-color: green;"></div>
         </div>
       </div>
+      <div
+          v-if="false"
+          :style="{backgroundImage:'url('+require('../../public/bg.jpg')+')'}"
+          style="width: 100vw; height: 100vh; background-position: center center; background-size: cover; background-repeat: no-repeat;">
 
-      <div class="w-full" style="min-height: 30vh;" ref="tripBar1"></div>
-
-      <div class="grid-3_xs-1_sm-2_md-2 mt-10">
-        <div class="col" ref="earnExpensePie" style="min-height: 30vh;"></div>
-        <div class="col" ref="tripBar" style="min-height: 30vh">
-        </div>
-        <div class="col" ref="tripBar2" style="min-height: 30vh;"></div>
-      </div>
-
-      <div class="grid-2_xs-1_sm-2_md-2 mt-10">
-        <div class="col" style="min-height: 30vh; background-color: pink;"></div>
-        <div class="col" style="min-height: 30vh; background-color: green;"></div>
       </div>
     </div>
 </template>
