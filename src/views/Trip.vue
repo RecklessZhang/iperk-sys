@@ -8,25 +8,34 @@
     </div>
     <div class="item-align-center text-align-center" style="flex-direction: column;">
       <h3>张海龙</h3>
-      <h5>3362241807@qq.com · Member since May 16, 2022</h5>
-      <div><i class='bx bxs-group'></i> 1 follower · 0 following</div>
+      <h5 class="mt-10">3362241807@qq.com · Member since May 16, 2022</h5>
+      <div class="mt-5"><i class='bx bxs-group'></i> 1 follower · 0 following</div>
+    </div>
+
+    <div class="item-align-center mt-10">
+      <TabSwitch></TabSwitch>
     </div>
 
     <Calendar :contributionData="contributionData" :that="this"></Calendar>
 
     <div class="grid-2_xs-1_sm-2_md-2 mt-10">
-      <div class="col" style="height: 40vh; background-color: pink;"></div>
-      <div class="col" style="height: 40vh; background-color: green;"></div>
+      <div class="col" style="height: 40vh; background-color: pink;">
+
+      </div>
+      <div class="col" style="height: 40vh; background-color: green;">
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Calendar from '../components/Calendar.vue'
+import TabSwitch from '../components/trip/TabSwitch.vue';
 export default {
   name: 'Trip',
   components: {
-    Calendar
+    Calendar,
+    TabSwitch
   },
   data() {
     return {

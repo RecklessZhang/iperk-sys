@@ -1,6 +1,6 @@
 <template>
     <div style="width: 100%;">
-        <div style="height: 300px;" ref="tripContainer"></div>
+        <div style="height: 250px;" ref="tripContainer"></div>
     </div>
   </template>
 
@@ -29,7 +29,6 @@ export default {
           trigger: 'item'
         },
         calendar: [{
-          top: 100,
           left: 'center',
           range: '2016',
           splitLine: {

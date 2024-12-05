@@ -29,6 +29,28 @@ export default {
           name: '黑神话悟空',
           price: 268,
           count: 1,
+          status: 'done',
+          expireTime: '2024-08-19',
+          purchaseUrlFromTaoBao: 'https://www.baidu.com',
+          purchaseUrlFromJingDong: '',
+          purchaseUrlFromTianMao: ''
+        },
+        {
+          id: 3,
+          name: '黑神话悟空',
+          price: 268,
+          count: 1,
+          status: 'done',
+          expireTime: '2024-08-19',
+          purchaseUrlFromTaoBao: 'https://www.baidu.com',
+          purchaseUrlFromJingDong: '',
+          purchaseUrlFromTianMao: ''
+        },
+        {
+          id: 4,
+          name: '黑神话悟空',
+          price: 268,
+          count: 1,
           status: 'working',
           expireTime: '2024-08-24',
           purchaseUrlFromTaoBao: 'https://www.baidu.com',
